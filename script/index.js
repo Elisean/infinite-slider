@@ -61,7 +61,7 @@ const nextSlide = () => {
     }
     nextImageGenerate();
     animate({
-        duration: 1000,
+        duration: 1500,
         draw: function (progress) {
             document.querySelector('.slider-line img').style.width = (widthOffset * (1 - progress)) + 'px';
         },
@@ -83,7 +83,7 @@ const prevSlide = () => {
     prevImageGenerate(true);
 
     animate({
-        duration: 1000,
+        duration: 1500,
         draw: function (progress) {
             document.querySelector('.slider-line img').style.width = (widthOffset * progress) + 'px';
         },
